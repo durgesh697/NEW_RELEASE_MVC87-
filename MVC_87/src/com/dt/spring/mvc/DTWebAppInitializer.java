@@ -4,14 +4,12 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class DTWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-	@Override
 	protected Class<?>[] getRootConfigClasses() {
 
 		System.out.println("get rootConfig");
 		return new Class[] { DTConfig.class };
 	}
 
-	@Override
 	protected Class<?>[] getServletConfigClasses() {
 
 		System.out.println("getServlet");
